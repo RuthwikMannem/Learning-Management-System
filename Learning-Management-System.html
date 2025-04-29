@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <style>
+        /* Resetting some styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        /* Main content */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .courses, .profile {
+            width: 48%;
+        }
+
+        .courses ul, .profile ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .courses li, .profile li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .courses h2, .profile h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        /* Course Item */
+        .course-item a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.2rem;
+        }
+
+        .course-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Learning Management System</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Courses Section -->
+        <div class="courses">
+            <h2>Available Courses</h2>
+            <ul>
+                <li class="course-item">
+                    <a href="#">Introduction to Python</a>
+                </li>
+                <li class="course-item">
+                    <a href="#">Web Development Basics</a>
+                </li>
+                <li class="course-item">
+                    <a href="#">Data Science with Python</a>
+                </li>
+                <li class="course-item">
+                    <a href="#">Machine Learning Fundamentals</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <h2>Your Profile</h2>
+            <ul>
+                <li>Name: John Doe</li>
+                <li>Email: johndoe@example.com</li>
+                <li>Courses Enrolled: 3</li>
+                <li>Status: Active</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Learning Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
